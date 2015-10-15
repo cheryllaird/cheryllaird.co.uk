@@ -1,0 +1,22 @@
+@import "base/document";
+@import "base/forms";
+@import "base/icons";
+@import "base/typography";
+
+
+img {
+	max-width: 100%;
+}
+
+section {
+	@include pie-clearfix;
+	margin-bottom: 40px;
+
+	@include breakpoint('medium') {
+		margin-bottom: 60px;
+	}
+
+	@include breakpoint('large') {
+		margin-bottom: 80px;
+	}
+}

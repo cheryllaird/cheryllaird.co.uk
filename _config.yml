@@ -1,0 +1,17 @@
+# Site settings
+title: Cheryl Laird's Personal Portfolio
+description: > # this means to ignore newlines until "baseurl:"
+  Personal portfolio of Cheryl Laird - Specialised in front-end development with over five years of industry experience. Based in York, North Yorkshire, UK.
+baseurl: "http://cheryllaird.co.uk" # the subpath of your site, e.g. /blog/
+url: "cheryllaird.co.uk" # the base hostname & protocol for your site
+email: cheryl.laird@outlook.com
+twitter_username: cheryl_laird
+github_username:  cheryllaird
+
+# Build settings
+markdown: kramdown
+source: development
+destination: public
+keep_files: ['css', 'js', 'images']
+exclude: ['sass', 'js', 'images']
+permalink: pretty

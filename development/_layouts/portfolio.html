@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<ul class="breadcrumb">
+	<li class="is-back"><a href="{{ '/portfolio' | prepend: site.baseurl }}">Back to portfolio</a></li>
+</ul>
+
+
+<section class="portfolio__piece">
+    <div class="portfolio__piece__image">
+    	{% if page.link %}
+		<a href="{{ page.link }}" target="_blank">
+		{% endif %}
+			<img src="{{ page.image_path | prepend: site.baseurl }}" alt="{{ page.title }}" />
+		{% if page.link %}
+		</a>
+		{% endif %}
+	</div>
+
+	<div class="portfolio__piece__content">
+		<h1>{{ page.title }}</h1>
+
+		{{ content }}
+	</div>
+</section>
+
+{% include photoswipe.html %}

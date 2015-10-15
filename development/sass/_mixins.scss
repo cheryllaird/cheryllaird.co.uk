@@ -1,0 +1,17 @@
+@mixin breakpoint($size) {
+	$value: map-get($breakpoints, $size);
+
+	@if $value != null {
+		@media screen and (min-width: $value) {
+			@content;
+		}
+		.old-ie & {
+			@content;
+		}
+	}
+
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$size}`. "
+		+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}

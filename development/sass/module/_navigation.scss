@@ -1,0 +1,35 @@
+.navigation {
+    ul {
+        list-style: none;
+        margin-bottom: 10px;
+
+        li {
+            @include breakpoint('small') {
+                display: inline-block;
+            }
+
+            a {
+                font-size: 1em;
+                color: $white;
+                text-transform: uppercase;
+                padding: 10px 30px;
+                position: relative;
+
+                @include breakpoint('medium') {
+                    font-size: 1.1em;
+                }
+
+                &:hover:not(.is-active), &.is-active {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .is-compact & {
+        @include breakpoint('medium') {
+            float: right;
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cheryllaird.co.uk",
+  "author": "Cheryl Laird",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "compass-mixins": "~1.0.2",
+    "html5shiv": "~3.7.2",
+    "jquery": "1.11",
+    "photoswipe": "~4.1.0"
+  },
+  "ignore": [
+    "src",
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ]
+}

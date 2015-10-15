@@ -1,0 +1,17 @@
+.logo {
+	font-size: 3em;
+	line-height: 1;
+	font-family: $font-secondary;
+	letter-spacing: -3px;
+	display: inline-block;
+	margin-bottom: 15px;
+	
+	@include breakpoint('medium') {
+		font-size: 3.7em;
+		float: left;
+	}
+	
+	a {
+		color: $white;
+	}
+}

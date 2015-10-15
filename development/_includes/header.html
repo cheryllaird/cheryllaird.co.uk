@@ -1,0 +1,26 @@
+<header class="header {% if page.type != "homepage" %}is-compact{% endif %}">
+    <div class="wrapper">
+
+        {% if page.type == "homepage" %}
+        <div class="headline">
+            <span class="headline__primary">
+                <span class="text--secondary">WELCOME!</span> <span class="text--primary">I'M</span> <span class="text--white">CHERYL LAIRD</span>
+            </span>
+            <span class="headline__secondary">
+                <span class="text--primary">PASSIONATE FOR</span> <span class="text--secondary">WEB DESIGN</span> <span class="text--primary">AND</span> <span class="text--secondary">DEVELOPMENT</span>
+            </span>
+        </div>
+
+        {% else %}
+
+        <div class="logo">
+            <a href="{{ site.baseurl }}">CHERYL LAIRD</a>
+        </div>
+
+        {% endif %}
+
+        
+
+        {% include navigation.html %}
+    </div>
+</header>

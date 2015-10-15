@@ -1,0 +1,13 @@
+<nav class="navigation">
+    <ul>
+        <li class="{% if page.url == '/index.html' %}is-active{% endif %}">
+            <a href="{{ site.baseurl }}">Home</a>
+        </li>
+        <li class="{% if page.url contains 'portfolio' %}is-active{% endif %}">
+            <a href="{{ "/portfolio" | prepend: site.baseurl }}">Portfolio</a>
+        </li>
+        <li class="{% if page.url contains 'contact' %}is-active{% endif %}">
+            <a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,20 @@
+.portfolio__piece {
+
+}
+
+.portfolio__piece__content {
+	margin-bottom: 50px;
+}
+
+.portfolio__piece__image {
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+
+	@include breakpoint('medium') {
+		margin-bottom: 50px;
+	}
+}
+
+		
+		

@@ -1,0 +1,33 @@
+$black: #555555;
+$white: #f4fefd;
+
+$primary-color: #c33f4a;
+$secondary-color: #84c5ba;
+$background-color: $white;
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Pathway+Gothic+One);
+
+$font-primary: 'Lato';
+$font-secondary: 'Pathway Gothic One';
+$font-size: 16px;
+$font-color: $black;
+
+$border-color: #D0D0D0;
+$border-radius: 5px;
+
+$wrapper-width: 1000px;
+
+$breakpoints: (
+  'x-small': 320px,
+  'small': 480px,
+  'medium': 780px,
+  'large': 1020px
+);
+
+@import "../../bower_components/compass-mixins/lib/compass";
+@include global-reset;
+
+@import "mixins";
+@import "base";
+@import "layout";
+@import "module";

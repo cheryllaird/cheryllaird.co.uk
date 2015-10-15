@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: $font-size;
+    line-height: 2;
+    color: $font-color;
+    background: $background-color url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABaAFoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwj/xAAhEAEAAgICAwEBAQEAAAAAAAABAAIRIQMSMUFCE1EjM//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD07Z+KQpxmDdmFOMwbswBQ7W2+iAAodrbfRIHZbX8QHZbX8Q55LYNVIBzyWwaqS2fikWfikKcZg3ZgFOMwbswBQ7W2+iAKHa230SB2W1/EAHZbX8Q55LYNVIc8lsGqktn4pAWfikv5H9kU4zBuzM/ndgaAodrbfRIHZbX8QHZbX8Q55LYNVIBzyWwaqS2fikWfikKcZg3ZgFOMwbswBQ7W2+iAKHa230SB2W1/EAHZbX8Q55LYNVIc8lsGqktn4pAWfikKcZg3ZhTjMG7MAUO1tvogAKHa230TPe8odltfxNfqfyBlzyWwaqS2fikWfikKcZg3ZgFOMwbswBQ7W2+iAKHa230SB2W1/EAHZbX8Q55LYNVIc8lsGqktn4pAWfikKcZg3ZhTjMG7MAUO1tvogAKHa230SB2W1/EB2W1/EOeS2DVSAc8lsGqk1/maks/FJfyP7AinGYN2YAodrbfRAFDtbb6JA7La/iADstr+Ic8lsGqkOeS2DVSWz8UgLPxSFOMwbswpxmDdmAKHa230QAFDtbb6JA7La/iA7La/iHPJbBqpAOeS2DVSWz8Uiz8UhTjMG7MApxmDdmZ/O7NAUO1tvome94FDstr+Ic8lsGqkOeS2DVSWz8UgLPxSFOMwbswpxmDdmAKHa230QAFDtbb6JA7La/iA7La/iHPJbBqpAOeS2DVSWz8Uiz8UhTjMG7MApxmDdmAKHa230QBQ7W2+iQOy2v4gA7La/ia/U/ky55LYNVJr/M1Aln4pCnGYN2Y4fFpnj3ybgaAodrbfRIHZbX8Scn/Sa5vBAjnktg1Uls/FJfHDqTh8WgFOMwbswBQ7W2+iZ498m45P+kCh2W1/EOeS2DVSXm8Evjh1Aln4pL+R/ZOHxac1cwP/2Q==');
+    margin: 0;
+
+    &:before {
+        content: '';
+        box-shadow: rgba($black,0.5) 0 0 10px 0;
+        position: fixed;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        z-index: 100;
+    }
+}
+
+
+// Sticky footer
+html, body {
+    height: 100%
+}
+
+body {
+    display: table;
+    width: 100%
+}
+
+.row {
+    display: table-row;
+    height: 1px
+}
+
+.row--expanded {
+    display: table-row;
+    height: 100%
+}

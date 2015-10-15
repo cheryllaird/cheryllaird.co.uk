@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="l-margintop50">
+	<h1>Send me a message</h1>
+        
+	<form id="contactForm" class="contact" action="mail.php" method="POST">
+		<label for="name" class="name"></label>
+		<input type="text" name="name" id="name" placeholder="Enter name" required />
+		
+		<label for="email" class="email"></label>
+		<input type="email" name="email" id="email" placeholder="Enter email" required />
+		
+		<label for="comments" class="comments"></label>
+		<textarea name="comments" cols="20" rows="7" placeholder="Enter comments" required></textarea>
+		
+		<input type="submit" name="submitForm" value="Submit" />
+	</form>
+</section>

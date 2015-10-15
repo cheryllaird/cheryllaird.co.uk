@@ -1,0 +1,11 @@
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://www.cheryllaird.co.uk/</loc></url>
+  <url><loc>http://www.cheryllaird.co.uk/index/</loc></url>
+  <url><loc>http://www.cheryllaird.co.uk/portfolio/</loc></url>
+  <url><loc>http://www.cheryllaird.co.uk/contact/</loc></url>
+</urlset>

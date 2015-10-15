@@ -1,0 +1,34 @@
+// Defaults ---------------------------------------------------/
+$grid-cols: 6 !default;
+$grid-gutter-default: 100 !default;
+$grid-gutters: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100) !default;
+// ------------------------------------------------------------/
+ 
+.l-grid {
+    @extend %gutter#{$grid-gutter-default};
+}
+ 
+@each $grid-gutter in $grid-gutters {
+    %gutter#{$grid-gutter} {
+        margin-left: -$grid-gutter + px;
+ 
+        > [class*='col--'] {
+            padding-left: $grid-gutter + px;
+        }
+    }
+}
+ 
+[class*='col--'] {
+    float: left;
+    width: 100%;
+}
+
+@include breakpoint('medium') {
+    @for $cols from 1 through $grid-cols {
+        @for $fraction from 1 through $cols {
+            .col--#{$fraction}-#{$cols} {
+                width: 100% / $cols * $fraction;
+            }
+        }
+    }
+}
